@@ -13,6 +13,7 @@ int main(){
     fgets(ville, sizeof(ville), stdin);         //sizeof bach fgets matfoutch l7ad dyal tableau name 
 
     name[strcspn(name, "\n")] = '\0';              //changina "\n" b '\0' bach n suprimiwha man name webla mayerja3 a la ligne
+    ville[strcspn(ville, "\n")] = '\0';
 
     strcat(name, " ");                      //zadna espace l lchaine (name) 9bal manzido liha chaine ville 
 

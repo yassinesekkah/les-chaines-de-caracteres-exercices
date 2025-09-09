@@ -12,6 +12,9 @@ int main(){
     printf("Entrez le dexieme mot : \n");
     fgets(name2, sizeof(name2), stdin);
 
+    name1[strcspn(name1, "\n")] = '\0';             //supprimer le "\n"
+    name2[strcspn(name2, "\n")] = '\0';
+
     if (strcmp(name1, name2) == 0){                              //strcmp kadir return 0 ila kano le meme 
         printf("le premier et le dexieme mot sont identiques");
     }
