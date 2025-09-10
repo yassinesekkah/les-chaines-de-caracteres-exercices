@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 int main (){
     char str[100];
-    int longueur = 0;
     int i = 0;
+
     printf("Entrez un mot : \n");
-    scanf("%s", str);
+    fgets(str, sizeof(str), stdin)
 
     while(str[i] != '\0'){
         longueur++;
